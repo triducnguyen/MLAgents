@@ -17,7 +17,6 @@ public class Flower : MonoBehaviour
     /// <summary>
     /// The trigger collider representing the nectar
     /// </summary>
-    [HideInInspector]
     public Collider nectarCollider;
 
     // The solid collider representing the flower petals
