@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -79,38 +80,17 @@ public class FlowerArea : MonoBehaviour
     /// <param name="parent">The parent of the children to check</param>
     private void FindChildFlowers(Transform parent)
     {
-        for (int i = 0; i < parent.childCount; i++)
+        //get all flower plants
+        var plants = GameObject.FindGameObjectsWithTag("flower_plant");
+        flowerPlants.AddRange(plants);
+
+        //get all flowers
+        var flowers = GameObject.FindGameObjectsWithTag("flower").ToList().Select(x => x.GetComponent<Flower>()).ToArray();
+        Flowers.AddRange(flowers);
+        //add flower's collider to flower dictionary
+        foreach (var f in Flowers)
         {
-            Transform child = parent.GetChild(i);
-
-            if (child.CompareTag("flower_plant"))
-            {
-                // Found a flower plant, add it to the flowerPlants list
-                flowerPlants.Add(child.gameObject);
-
-                // Look for flowers within the flower plant
-                FindChildFlowers(child);
-            }
-            else
-            {
-                // Not a flower plant, look for a Flower component
-                Flower flower = child.GetComponent<Flower>();
-                if (flower != null)
-                {
-                    // Found a flower, add it to the Flowers list
-                    Flowers.Add(flower);
-
-                    // Add the nectar collider to the lookup dictionary
-                    nectarFlowerDictionary.Add(flower.nectarCollider, flower);
-
-                    // Note: there are no flowers that are children of other flowers
-                }
-                else
-                {
-                    // Flower component not found, so check children
-                    FindChildFlowers(child);
-                }
-            }
+            nectarFlowerDictionary[f.nectarCollider] = f;
         }
     }
 }
