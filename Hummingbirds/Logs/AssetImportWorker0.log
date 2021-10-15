@@ -1,483 +1,131 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16276 MB
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 32640 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Ryan/Documents/GitHub/MLAgents/Hummingbirds
+C:/Users/inuya/Documents/GitHub/MLAgents/Hummingbirds
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64462
-Successfully changed project path to: C:/Users/Ryan/Documents/GitHub/MLAgents/Hummingbirds
-C:/Users/Ryan/Documents/GitHub/MLAgents/Hummingbirds
+59373
+Successfully changed project path to: C:/Users/inuya/Documents/GitHub/MLAgents/Hummingbirds
+C:/Users/inuya/Documents/GitHub/MLAgents/Hummingbirds
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 61.57 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 50.44 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Ryan/Documents/GitHub/MLAgents/Hummingbirds/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/inuya/Documents/GitHub/MLAgents/Hummingbirds/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 with Max-Q Design (ID=0x1c20)
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1be1)
     Vendor:   
-    VRAM:     6052 MB
-    Driver:   27.21.14.5730
+    VRAM:     8081 MB
+    Driver:   26.21.14.3153
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002694 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002249 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.15 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 51.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.374 seconds
+- Completed reload, in  1.808 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006170 seconds.
+Registered in 0.004910 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.35 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 53.87 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.975 seconds
+- Completed reload, in  1.654 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 123.7 MB.
-System memory in use after: 123.9 MB.
+System memory in use before: 123.4 MB.
+System memory in use after: 123.6 MB.
 
 Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3108.
-Total: 2.752700 ms (FindLiveObjects: 0.345800 ms CreateObjectMapping: 0.138300 ms MarkObjects: 2.174900 ms  DeleteObjects: 0.092400 ms)
+Total: 3.110000 ms (FindLiveObjects: 0.265200 ms CreateObjectMapping: 0.149400 ms MarkObjects: 2.635200 ms  DeleteObjects: 0.059200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645fbe3aea48156f2577172870d6a595') in 0.313025 seconds
-  Import took 0.318612 seconds .
+  path: Assets/Hummingbird
+  artifactKey: Guid(7088f3c1a99506041bf466888ff29915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird using Guid(7088f3c1a99506041bf466888ff29915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6410897f84171003553e5c4cf5f7310e') in 0.011472 seconds
+  Import took 0.015936 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000487 seconds.
-  path: Assets/Hummingbird/Prefabs/RockCluster.prefab
-  artifactKey: Guid(a98bbb82cafc8e24f99a4fcdb013ee9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/RockCluster.prefab using Guid(a98bbb82cafc8e24f99a4fcdb013ee9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1a494eb8552ad5895f7ec8943964a8') in 0.014291 seconds
-  Import took 0.019478 seconds .
+  Time since last request: 0.188213 seconds.
+  path: Assets/Hummingbird/Scenes
+  artifactKey: Guid(4d21ee927516e4d4997cdcdb51c732e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Scenes using Guid(4d21ee927516e4d4997cdcdb51c732e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04f4420f0250aafe974a00dbeedf0ab') in 0.009011 seconds
+  Import took 0.013845 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000408 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerBud.prefab
-  artifactKey: Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerBud.prefab using Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777da497077d9b3d2541e698957bb5fd') in 0.018256 seconds
-  Import took 0.024990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000598 seconds.
-  path: Assets/Hummingbird/Prefabs/Path.prefab
-  artifactKey: Guid(a9dc19902681d54489a212d13bab31f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/Path.prefab using Guid(a9dc19902681d54489a212d13bab31f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a98902690f1f68a39d134ffdf9653e8') in 0.033261 seconds
-  Import took 0.038808 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000402 seconds.
-  path: Assets/Hummingbird/Prefabs/UI.prefab
-  artifactKey: Guid(761b85bf77377c84c99d1f58d31e9bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/UI.prefab using Guid(761b85bf77377c84c99d1f58d31e9bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2e4f9c416910ff05d7e43f6958a639') in 0.095009 seconds
-  Import took 0.100421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Hummingbird/Prefabs/Hummingbird.prefab
-  artifactKey: Guid(ee5d7605796823e44b0821e269dced5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/Hummingbird.prefab using Guid(ee5d7605796823e44b0821e269dced5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e8f69b7b5a510b593788ff166dbb83') in 0.044357 seconds
-  Import took 0.050019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Hummingbird/Scenes/FlowerIsland/LightingData.asset
-  artifactKey: Guid(b738113c1b83ad143b17ddb39b0e064e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Scenes/FlowerIsland/LightingData.asset using Guid(b738113c1b83ad143b17ddb39b0e064e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b70ab93b611b5b61a13cd9a884a745') in 0.007904 seconds
-  Import took 0.012787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000459 seconds.
-  path: Assets/Hummingbird/Scenes/FlowerIsland
-  artifactKey: Guid(c87e19928d71f67428b8f0057dea0e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Scenes/FlowerIsland using Guid(c87e19928d71f67428b8f0057dea0e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b43e35cc9d5d9cf57516ec2e00e6cf1') in 0.002521 seconds
-  Import took 0.007538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000365 seconds.
-  path: Assets/Hummingbird/Prefabs/BushCluster.prefab
-  artifactKey: Guid(fe747d96827b7c14086ec6a5aed4ef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/BushCluster.prefab using Guid(fe747d96827b7c14086ec6a5aed4ef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d635563d553b139c2417992184a599') in 0.034874 seconds
-  Import took 0.040368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000486 seconds.
-  path: Assets/Hummingbird/Prefabs
-  artifactKey: Guid(42042b897449ddb4f908825f8edc5740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs using Guid(42042b897449ddb4f908825f8edc5740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb50a83c53542631129271ff3e8c3935') in 0.002979 seconds
-  Import took 0.008030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000400 seconds.
-  path: Assets/Hummingbird/Scenes/FlowerIsland/ReflectionProbe-0.exr
-  artifactKey: Guid(a15020b3f98f5264b936ee154ab647b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Scenes/FlowerIsland/ReflectionProbe-0.exr using Guid(a15020b3f98f5264b936ee154ab647b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd7fd1dcce0551e4de8e82bfdcf34a5') in 0.055844 seconds
-  Import took 0.063085 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000427 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c1d5b63adede6facfadd2e53f4237a') in 0.391001 seconds
-  Import took 0.416202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 230.618755 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a39ee4bb3bb9b281036f5e05aa49f2f') in 0.004003 seconds
-  Import took 0.009975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004824 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a39ee4bb3bb9b281036f5e05aa49f2f') in 0.003309 seconds
-  Import took 0.009983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.997418 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb2358d61ba36d4a87194f14fa23fb2c') in 0.430836 seconds
-  Import took 0.456945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aefa9b60c5f26a7a2f39a240ca1c1c2') in 0.015418 seconds
-  Import took 0.021140 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.696857 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886d9b22b52d70de3a70df27da5d2784') in 0.431089 seconds
-  Import took 0.463725 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a28eba7e25fcbb92a7d448fa912cd00c') in 0.018262 seconds
-  Import took 0.026314 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.212416 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bc142c97d9026c122a908a699dbca4') in 0.385365 seconds
-  Import took 0.410456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffda003045265e3b25696b79326ecfef') in 0.019331 seconds
-  Import took 0.024403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerBud.prefab
-  artifactKey: Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerBud.prefab using Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61364e1138e4718d23b584b29a431d5e') in 0.015184 seconds
-  Import took 0.020810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.643268 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ad2a226144d8c68144f6c39693838d') in 0.375882 seconds
-  Import took 0.402618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000388 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcf74525e756df834862bbc0e9fadf3') in 0.018019 seconds
-  Import took 0.024769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.665929 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277e3d5bf2f0521fd096848d3bb76ba5') in 0.355943 seconds
-  Import took 0.381069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3b20b4a9c8cf03cb3b9dcdc8e91892') in 0.019573 seconds
-  Import took 0.026433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.089939 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e71dcc0dc4e2fca2d02da131bf2a3777') in 0.375219 seconds
-  Import took 0.402183 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdca24fc53da351cbbace3bafd9bcace') in 0.016429 seconds
-  Import took 0.023094 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000407 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerBud.prefab
-  artifactKey: Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerBud.prefab using Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '475635e0d739674d61197ac8bf9350fd') in 0.013608 seconds
-  Import took 0.019655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.201006 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1485517b73a8280793d5ca29140fa1b5') in 0.362465 seconds
-  Import took 0.387774 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000418 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b39d938bb7af3de1c0bc4252a9bf401') in 0.019454 seconds
-  Import took 0.026036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.228704 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1143cf62cb3d98cce4783082b7d2d152') in 0.386580 seconds
-  Import took 0.415731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000377 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0778c464cd38dcf9970d02f29dd2d322') in 0.019831 seconds
-  Import took 0.026200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.627848 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecddf9a85191d73bcea2997d1d23b612') in 0.355055 seconds
-  Import took 0.381292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000594 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196b03768f8c59d1d2c835568ded4c1b') in 0.015567 seconds
-  Import took 0.020812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.650684 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35b0a726db080e68991a193a62b801a') in 0.380669 seconds
-  Import took 0.405879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee119fa7038e3add4cac9a307830774') in 0.015701 seconds
-  Import took 0.021529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.730987 seconds.
-  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
-  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e7ac8f0ab6ca31c8c4f7332d38036a') in 0.387974 seconds
-  Import took 0.413014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000637 seconds.
-  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
-  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0590a3ada2c3f827b17e863ef8955d9') in 0.014729 seconds
-  Import took 0.020987 seconds .
+  Time since last request: 1.175384 seconds.
+  path: Assets/Hummingbird/Scenes/FlowerIsland.unity
+  artifactKey: Guid(8621f3c4db9aac9479daa0e72eac6302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Scenes/FlowerIsland.unity using Guid(8621f3c4db9aac9479daa0e72eac6302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d726f32cb2d9a9dd7fb2720e687433') in 0.014721 seconds
+  Import took 0.018613 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005280 seconds.
+Registered in 0.004878 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.303 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 135.0 MB.
-System memory in use after: 135.2 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3180.
-Total: 3.798600 ms (FindLiveObjects: 0.393800 ms CreateObjectMapping: 0.249300 ms MarkObjects: 3.097100 ms  DeleteObjects: 0.056000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009091 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.867 seconds
+- Completed reload, in  1.062 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.0 MB.
-System memory in use after: 136.3 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3182.
-Total: 6.370600 ms (FindLiveObjects: 0.473100 ms CreateObjectMapping: 0.256400 ms MarkObjects: 5.608800 ms  DeleteObjects: 0.030600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006493 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.422 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 135.8 MB.
-System memory in use after: 136.1 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3184.
-Total: 3.185000 ms (FindLiveObjects: 0.392500 ms CreateObjectMapping: 0.288700 ms MarkObjects: 2.448700 ms  DeleteObjects: 0.054000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006475 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.450 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.1 MB.
-System memory in use after: 136.3 MB.
+System memory in use before: 117.2 MB.
+System memory in use after: 117.4 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3186.
-Total: 4.980200 ms (FindLiveObjects: 0.429700 ms CreateObjectMapping: 0.278200 ms MarkObjects: 4.237500 ms  DeleteObjects: 0.032900 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3110.
+Total: 3.461200 ms (FindLiveObjects: 0.464700 ms CreateObjectMapping: 0.264700 ms MarkObjects: 2.703500 ms  DeleteObjects: 0.027000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007828 seconds.
+Registered in 0.004696 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
@@ -486,87 +134,288 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.350 seconds
+- Completed reload, in  1.013 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.0 MB.
-System memory in use after: 136.2 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3188.
-Total: 3.726000 ms (FindLiveObjects: 0.357500 ms CreateObjectMapping: 0.209300 ms MarkObjects: 3.111000 ms  DeleteObjects: 0.046700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007327 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.396 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.0 MB.
-System memory in use after: 136.2 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3190.
-Total: 3.737800 ms (FindLiveObjects: 0.711400 ms CreateObjectMapping: 0.234600 ms MarkObjects: 2.736600 ms  DeleteObjects: 0.053600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007481 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.352 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.1 MB.
-System memory in use after: 136.4 MB.
+System memory in use before: 117.8 MB.
+System memory in use after: 118.0 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3192.
-Total: 4.187600 ms (FindLiveObjects: 0.498200 ms CreateObjectMapping: 0.282400 ms MarkObjects: 3.356200 ms  DeleteObjects: 0.049300 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3112.
+Total: 3.162000 ms (FindLiveObjects: 0.388200 ms CreateObjectMapping: 0.211400 ms MarkObjects: 2.506500 ms  DeleteObjects: 0.054500 ms)
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005964 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.349 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2561 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.1 MB.
-System memory in use after: 136.4 MB.
+Received Import Request.
+  Time since last request: 345.622589 seconds.
+  path: Assets/Hummingbird/Scenes/SpaceScene_WIP.unity
+  artifactKey: Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Scenes/SpaceScene_WIP.unity using Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be61948c95f2c979687e4bfc79fe0af4') in 0.022474 seconds
+  Import took 0.026996 seconds .
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3194.
-Total: 3.756100 ms (FindLiveObjects: 0.433900 ms CreateObjectMapping: 0.161300 ms MarkObjects: 3.121800 ms  DeleteObjects: 0.037400 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.002965 seconds.
+  path: Assets/Hummingbird/Scenes/SpaceScene_WIP.unity
+  artifactKey: Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Scenes/SpaceScene_WIP.unity using Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be61948c95f2c979687e4bfc79fe0af4') in 0.005726 seconds
+  Import took 0.011328 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 5.915337 seconds.
+  path: Assets/Hummingbird/Prefabs/BushCluster.prefab
+  artifactKey: Guid(fe747d96827b7c14086ec6a5aed4ef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/BushCluster.prefab using Guid(fe747d96827b7c14086ec6a5aed4ef3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2bf49943e81124e81b0ab4d88c2946f') in 0.602487 seconds
+  Import took 0.608772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Hummingbird/Prefabs/FlowerPlant.prefab
+  artifactKey: Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/FlowerPlant.prefab using Guid(681ae66681fb7c0409764abd33c9d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14af525fa49f5c4e1c34be3fd75d3120') in 0.025394 seconds
+  Import took 0.031537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000587 seconds.
+  path: Assets/Hummingbird/Prefabs/RockCluster.prefab
+  artifactKey: Guid(a98bbb82cafc8e24f99a4fcdb013ee9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/RockCluster.prefab using Guid(a98bbb82cafc8e24f99a4fcdb013ee9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd61eb49cd1539a2e2e61bf618ee92fe') in 0.016123 seconds
+  Import took 0.021575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Hummingbird/Prefabs/FlowerBud.prefab
+  artifactKey: Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/FlowerBud.prefab using Guid(4ae36240683645a4d9b1345225a2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c18037e4f2905ff7187bf534b8eeca') in 0.017849 seconds
+  Import took 0.023781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Hummingbird/Prefabs/Path.prefab
+  artifactKey: Guid(a9dc19902681d54489a212d13bab31f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/Path.prefab using Guid(a9dc19902681d54489a212d13bab31f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a28a8cea8020a5569e23851b886cab7') in 0.015436 seconds
+  Import took 0.020823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Hummingbird/Prefabs/UI.prefab
+  artifactKey: Guid(761b85bf77377c84c99d1f58d31e9bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/UI.prefab using Guid(761b85bf77377c84c99d1f58d31e9bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f2afc9b05703de00cf2e71563b9433') in 0.079494 seconds
+  Import took 0.084204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Hummingbird/Prefabs/Hummingbird.prefab
+  artifactKey: Guid(ee5d7605796823e44b0821e269dced5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/Hummingbird.prefab using Guid(ee5d7605796823e44b0821e269dced5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f00af4435099a62a37d4d81a7a2667') in 0.364821 seconds
+  Import took 0.368769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Hummingbird/Prefabs/FloatingIsland.prefab
+  artifactKey: Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Prefabs/FloatingIsland.prefab using Guid(423815a9aec87fb48bbb6f0f35a66653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb7ca374488e7d0ddff9c5f1a8e10db') in 0.266147 seconds
+  Import took 0.288271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 151.915396 seconds.
+  path: Assets/Hummingbird/Meshes/bush.fbx
+  artifactKey: Guid(10b8efae1f56e404c8a75abc0fba81b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/bush.fbx using Guid(10b8efae1f56e404c8a75abc0fba81b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a03851573a68ab8066622d3b778cb46') in 0.355180 seconds
+  Import took 0.359786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Hummingbird/Meshes/hex_island.fbx
+  artifactKey: Guid(83d9734b540817b4daf70db9af93a315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/hex_island.fbx using Guid(83d9734b540817b4daf70db9af93a315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb11e5f433224501d352874c7364652b') in 0.073030 seconds
+  Import took 0.077068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Hummingbird/Meshes/rock.fbx
+  artifactKey: Guid(7792a6ec9ce88ba4ab2b0b08d44ac781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/rock.fbx using Guid(7792a6ec9ce88ba4ab2b0b08d44ac781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d477bb2b62625d900e8959199942d2') in 0.029061 seconds
+  Import took 0.033279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Hummingbird/Meshes/flower_bud.fbx
+  artifactKey: Guid(bc0136faaac9965429c5fdc51b2f94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/flower_bud.fbx using Guid(bc0136faaac9965429c5fdc51b2f94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a4292d3760c5cd837ec5cd009dc139') in 0.036012 seconds
+  Import took 0.040636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Hummingbird/Meshes/hummingbird.fbx
+  artifactKey: Guid(fbf093d06a5404d4aa02c32380eb3a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/hummingbird.fbx using Guid(fbf093d06a5404d4aa02c32380eb3a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d395ccb85d1b9500a02b7d16e07dcf') in 0.060833 seconds
+  Import took 0.065053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Hummingbird/Meshes/flower_stem_leaves.fbx
+  artifactKey: Guid(81104d6a5a905ed4bbffd8405cc8839e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/flower_stem_leaves.fbx using Guid(81104d6a5a905ed4bbffd8405cc8839e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cd02f26901452adc558539391d0f626') in 0.050820 seconds
+  Import took 0.054918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Hummingbird/Meshes/flower.fbx
+  artifactKey: Guid(8c77304d7888fac4eacdded42fcaac9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/flower.fbx using Guid(8c77304d7888fac4eacdded42fcaac9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1864e321ed233c5fc520aa49d8c7ba') in 0.074087 seconds
+  Import took 0.078216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Hummingbird/Meshes/bush_collider.fbx
+  artifactKey: Guid(388187fd0610ebe4887bb5d0bc074dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/bush_collider.fbx using Guid(388187fd0610ebe4887bb5d0bc074dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96433abc9f41ccee304e30e25cc3b9b') in 0.024487 seconds
+  Import took 0.029299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003790 seconds.
+  path: Assets/Hummingbird/Meshes/bush_collider.fbx
+  artifactKey: Guid(388187fd0610ebe4887bb5d0bc074dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/bush_collider.fbx using Guid(388187fd0610ebe4887bb5d0bc074dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96433abc9f41ccee304e30e25cc3b9b') in 0.022257 seconds
+  Import took 0.027601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.390916 seconds.
+  path: Assets/Hummingbird/Meshes/rock_collider.fbx
+  artifactKey: Guid(17f00b7b1af4faa44beeffe181190aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/rock_collider.fbx using Guid(17f00b7b1af4faa44beeffe181190aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c2379a3c7adee9ad7d662e106a0a39') in 0.019991 seconds
+  Import took 0.024879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.128406 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_5.obj
+  artifactKey: Guid(4efed281a4c5a764e89f6011de62ff75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_5.obj using Guid(4efed281a4c5a764e89f6011de62ff75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7330283722edd52bda0b0c444a46df0e') in 0.031815 seconds
+  Import took 0.037717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_8.obj
+  artifactKey: Guid(6c8cca83808a7274a8238d64a3c882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_8.obj using Guid(6c8cca83808a7274a8238d64a3c882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a58d088b0da8630b6dba168de56209a') in 0.027788 seconds
+  Import took 0.032366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_6.obj
+  artifactKey: Guid(aa27358da3b19ae4f92310c76281cf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_6.obj using Guid(aa27358da3b19ae4f92310c76281cf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf667ea2a535fa4939442781dbbe50b7') in 0.029117 seconds
+  Import took 0.034410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_7.obj
+  artifactKey: Guid(02f18a3c45de3a742b4b7e32867c7eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_7.obj using Guid(02f18a3c45de3a742b4b7e32867c7eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc38be9f519225274676f11e6d0850c') in 0.028088 seconds
+  Import took 0.033895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.919234 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_4.obj
+  artifactKey: Guid(ccbb7d072a1f3fa4eb1c5b591a74007b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_4.obj using Guid(ccbb7d072a1f3fa4eb1c5b591a74007b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d005ba959ea5909e3484d809657b3b') in 0.026313 seconds
+  Import took 0.030875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_3.obj
+  artifactKey: Guid(2862cf1f846d9f34a89dfa7ac70a5d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_3.obj using Guid(2862cf1f846d9f34a89dfa7ac70a5d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ce770b06e2704e9ca6512b9b0db83b') in 0.044171 seconds
+  Import took 0.047929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_2.obj
+  artifactKey: Guid(6053d0a58b1272b4ea0e39fc69e43de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_2.obj using Guid(6053d0a58b1272b4ea0e39fc69e43de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea41d41e9088e4f7d5da9adbb62a9736') in 0.043560 seconds
+  Import took 0.047548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.184854 seconds.
+  path: Assets/Hummingbird/Meshes/Asteroid_1.obj
+  artifactKey: Guid(3d1ee04cb9727bd46922ab09529ad9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Meshes/Asteroid_1.obj using Guid(3d1ee04cb9727bd46922ab09529ad9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391806ae12bb3f9caeb57699fe523441') in 0.028098 seconds
+  Import took 0.032531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 89.393621 seconds.
+  path: Assets/Hummingbird/Textures/hummingbird_fusciagreenGRADIENT.png
+  artifactKey: Guid(68993ed19fce68343aa40be6e498a412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Textures/hummingbird_fusciagreenGRADIENT.png using Guid(68993ed19fce68343aa40be6e498a412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6ae2f8818290dfe14964bd45ea4940') in 0.035832 seconds
+  Import took 0.040912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Hummingbird/Textures/hummingbird_wings.png
+  artifactKey: Guid(f483ae7399fd17a4383ca35a820719b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Textures/hummingbird_wings.png using Guid(f483ae7399fd17a4383ca35a820719b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c374f8f6e6c16e5f97b5b96fddc32437') in 0.012641 seconds
+  Import took 0.017007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.356976 seconds.
+  path: Assets/Hummingbird/Materials/SpaceEnvironment/Mat_Asteroid.mat
+  artifactKey: Guid(eea87cc2ad5311649b267bb7798a2762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Materials/SpaceEnvironment/Mat_Asteroid.mat using Guid(eea87cc2ad5311649b267bb7798a2762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e20021f5ae02ef2fd299764823d8f03') in 0.023148 seconds
+  Import took 0.027630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 538.655655 seconds.
+  path: Assets/Hummingbird/Materials/SpaceEnvironment/Mat_Asteroid.mat
+  artifactKey: Guid(eea87cc2ad5311649b267bb7798a2762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Materials/SpaceEnvironment/Mat_Asteroid.mat using Guid(eea87cc2ad5311649b267bb7798a2762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb3981c2dd7dfa42a5617b0c205673fd') in 0.016923 seconds
+  Import took 0.024086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 982.748861 seconds.
+  path: Assets/Hummingbird/Scenes/SpaceScene_WIP.unity
+  artifactKey: Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Scenes/SpaceScene_WIP.unity using Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b944bde437204da83a446dfc27f4e0') in 0.004944 seconds
+  Import took 0.011790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000800 seconds.
+  path: Assets/Hummingbird/Scenes/SpaceScene_WIP.unity
+  artifactKey: Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hummingbird/Scenes/SpaceScene_WIP.unity using Guid(53116935ea40c92478e4a69d556b6bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b944bde437204da83a446dfc27f4e0') in 0.003064 seconds
+  Import took 0.008082 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
