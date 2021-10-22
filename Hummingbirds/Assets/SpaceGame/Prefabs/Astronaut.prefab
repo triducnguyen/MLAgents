@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8985517030724258225}
   - component: {fileID: 4140760937683961461}
   - component: {fileID: 9109307298991489422}
+  - component: {fileID: 8322497700557092589}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Untagged
@@ -81,3 +82,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8322497700557092589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6975965647608397356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 907e223b150dc2d40b4cffb3c9210943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
