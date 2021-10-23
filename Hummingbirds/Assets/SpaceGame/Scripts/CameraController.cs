@@ -14,18 +14,15 @@ public class CameraController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        
+
+        //lerp towards target position
+        var newPos = Vector3.Lerp(transform.position, targetPos.position, .1f);
+        transform.position = newPos;
         //look at target
         transform.LookAt(targetLook);
 
-        //if camera is not near target location
-        if (Vector3.Distance(transform.position, targetPos.position) > 0.1f)
-        {
-            //lerp towards target position
-            var newPos = Vector3.Lerp(transform.position, targetPos.position, .2f);
-            transform.position = newPos;
-        }
-        
     }
 }

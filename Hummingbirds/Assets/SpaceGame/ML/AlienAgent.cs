@@ -6,9 +6,15 @@ using Unity.MLAgents.Sensors;
 
 public class AlienAgent : Agent
 {
+    //what the AI can see
+    public Camera aiCamera;
+    //AI rigidbody
     public Rigidbody rBody;
-    public Transform targetPlanet;
+    //target planet to claim
+    public Transform targetFlag;
+    //AI reset position
     public Transform resetPosition;
+    //ai ship
     public ShipController shipController;
 
 
@@ -35,37 +41,36 @@ public class AlienAgent : Agent
     public override void CollectObservations(VectorSensor sensor)
     {
 
-        //choose a planet
-        SetRandomPlanetRange();
+        //choose a planet if one is not yet selected
+        if (targetFlag == null) SetRandomFlagRange(50f);
         //position of target planet
-        sensor.AddObservation(targetPlanet.position);
+        sensor.AddObservation(targetFlag.position);   //3
         //position of target planet flag
 
         //position of alien ship
-        sensor.AddObservation(transform.position);
+        sensor.AddObservation(transform.position);      //3
         //rotation of alien ship
-        sensor.AddObservation(transform.rotation);
+        sensor.AddObservation(transform.rotation);      //3
         //velecity of alien ship
-        sensor.AddObservation(rBody.velocity);
+        sensor.AddObservation(rBody.velocity);          //3
         //whether ship is landed or not
-        sensor.AddObservation(shipController.landed);
-        //whether ship is controllable or not
-        sensor.AddObservation(shipController.controllable);
+        sensor.AddObservation(shipController.landed);   //1
         //whether ship can land or not
-        sensor.AddObservation(shipController.canLand);
+        sensor.AddObservation(shipController.canLand);  //1
+        //total: 14
 
     }
 
     //when the ai has decided to do something
     public override void OnActionReceived(float[] vectorAction)
     {
-        //base.OnActionReceived(vectorAction);
+        
     }
 
 
     //sets AI's target planet to a random planet within a given range.
-    //if there are no planets in range, will return closest planet
-    public void SetRandomPlanetRange()
+    //if there are no planets in range, will use closest planet
+    public void SetRandomFlagRange(float range)
     {
 
     }

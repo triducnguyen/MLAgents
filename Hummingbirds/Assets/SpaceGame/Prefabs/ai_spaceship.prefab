@@ -161,11 +161,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e98d0d6f2f7cc4e8d8271fd3144c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ai_pilot: 0
   teamID: 0
   landed: 1
-  controllable: 0
   animator: {fileID: 0}
   shipBody: {fileID: 0}
+  pressedKeys: []
+  rayOrigin: {fileID: 0}
+  floorSensor:
+    maxDist: 0
 --- !u!114 &1019072523732816786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,8 +210,9 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  aiCamera: {fileID: 0}
   rBody: {fileID: 0}
-  targetPlanet: {fileID: 0}
+  targetFlag: {fileID: 0}
   resetPosition: {fileID: 0}
   shipController: {fileID: 0}
 --- !u!1 &1234337654494488557
@@ -291,6 +296,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1475382956555729949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71883460223848984}
+  m_Layer: 0
+  m_Name: FloorSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71883460223848984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475382956555729949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7294342981007406370}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1718929956908847952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1176,8 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0000000023841857, y: 0.0020472198, z: 0.0000000035762786}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 71883460223848984}
   m_Father: {fileID: 8519270144088957432}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
