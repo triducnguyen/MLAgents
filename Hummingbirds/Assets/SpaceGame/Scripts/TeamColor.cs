@@ -7,7 +7,7 @@ public class TeamColor : MonoBehaviour
     public int teamID = 0;
     public int lastID = 0;
 
-    public Renderer renderer;
+    public Material material;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +27,6 @@ public class TeamColor : MonoBehaviour
 
     void SetTeamMat()
     {
-        renderer.materials = new Material[] { TeamMaterials.instance.mats[teamID] };
+        material.SetColor("TeamColor",TeamController.instance.teams[teamID]);
     }
 }

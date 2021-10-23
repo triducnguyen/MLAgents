@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         //look at target
-        transform.LookAt(targetLook);
+        transform.LookAt(targetLook, ShipController.LocalDir(targetPos, Vector3.up));
 
         //if camera is not near target location
         if (Vector3.Distance(transform.position, targetPos.position) > 0.1f)

@@ -82,6 +82,7 @@ MonoBehaviour:
   team: 0
   hoisted: 1
   renderer: {fileID: 7335942753936081197}
+  contested: 0
 --- !u!1 &1635392264875118292
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +500,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a682b52d9f0f7574e8179b41cfccb266, type: 2}
+  - {fileID: 2100000, guid: 28a1ecbfa994298488dab667744f6574, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

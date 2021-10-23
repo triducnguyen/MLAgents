@@ -28,7 +28,22 @@ public class ShipController : MonoBehaviour
     //ray position
     public Transform rayOrigin;
     //distance sensor on bottom of ship. For landing
+<<<<<<< Updated upstream
     public FloorSensor floorSensor;
+=======
+    public FloorSensor floorSensor
+    {
+        get
+        {
+            return new FloorSensor(new Ray(rayOrigin.position, LocalDir(transform, Vector3.down)), 5f);
+        }
+    }
+
+    //final force to be added to ship
+    public Vector3 desiredForce = Vector3.zero;
+    //final torque to be added to ship
+    public Vector3 desiredTorque = Vector3.zero;
+>>>>>>> Stashed changes
     public bool canLand
     {
         get
@@ -40,6 +55,34 @@ public class ShipController : MonoBehaviour
     //list of bound keys
     List<KeyControl> boundKeys = new List<KeyControl>();
 
+<<<<<<< Updated upstream
+=======
+    //dictionary key to code
+    Dictionary<KeyCode, KeyControl> key2Control = new Dictionary<KeyCode, KeyControl>();
+
+    public static Vector3 LocalDir(Transform transform, Vector3 normalWorldDir)
+    {
+        return transform.rotation * normalWorldDir;
+    }
+
+    KeyControl forward;
+    KeyControl back;
+    KeyControl left;
+    KeyControl right;
+    KeyControl up;
+    KeyControl down;
+    KeyControl pitchUp;
+    KeyControl pitchDown;
+    KeyControl rollLeft;
+    KeyControl rollRight;
+    KeyControl yawLeft;
+    KeyControl yawRight;
+    KeyControl breaks;
+    KeyControl takeoff;
+    KeyControl turbo;
+
+
+>>>>>>> Stashed changes
     private void Awake()
     {
         //create floor sensor
@@ -96,7 +139,16 @@ public class ShipController : MonoBehaviour
                 }
             }
 
+<<<<<<< Updated upstream
         }
+=======
+    private void FixedUpdate()
+    {
+
+        //apply forces to rigidbody
+        shipBody.velocity = Vector3.Lerp(shipBody.velocity, LocalDir(transform, desiredForce) * speed, .2f);
+        shipBody.angularVelocity = Vector3.Lerp(shipBody.angularVelocity, LocalDir(transform, desiredTorque) * 3, .2f);
+>>>>>>> Stashed changes
     }
 
     void AddForce(Vector3 force, bool rotation = false)

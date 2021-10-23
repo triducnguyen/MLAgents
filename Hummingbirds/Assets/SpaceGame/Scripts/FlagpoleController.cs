@@ -10,11 +10,9 @@ public class FlagpoleController : MonoBehaviour
     //whether the flag is completely hoisted or not
     public bool hoisted = true;
 
-    //flag renderer
-    public MeshRenderer renderer;
 
-
-    //
+    //flag material
+    public Material flag;
 
     //if there is more than one team inside the capture zone
     public bool contested = false;
@@ -24,7 +22,7 @@ public class FlagpoleController : MonoBehaviour
     void Start()
     {
         //set flag to team
-        renderer.materials = new Material[1] { TeamMaterials.instance.mats[team] };
+        flag.SetColor("TeamColor",TeamController.instance.teams[team]);
     }
 
     // Update is called once per frame
