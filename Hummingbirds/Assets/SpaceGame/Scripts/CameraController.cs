@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
         var newPos = Vector3.Lerp(transform.position, targetPos.position, .1f);
         transform.position = newPos;
         //look at target
-        transform.LookAt(targetLook);
+        transform.LookAt(targetLook, ShipController.LocalDir(targetPos, Vector3.up));
 
     }
 }

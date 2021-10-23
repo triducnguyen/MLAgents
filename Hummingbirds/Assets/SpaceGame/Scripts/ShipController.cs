@@ -32,7 +32,7 @@ public class ShipController : MonoBehaviour
     {
         get
         {
-            return new FloorSensor(new Ray(rayOrigin.position, LocalDir(Vector3.down)), 5f);
+            return new FloorSensor(new Ray(rayOrigin.position, LocalDir(transform, Vector3.down)), 5f);
         }
     }
 
@@ -54,7 +54,7 @@ public class ShipController : MonoBehaviour
     //dictionary key to code
     Dictionary<KeyCode, KeyControl> key2Control = new Dictionary<KeyCode, KeyControl>();
 
-    Vector3 LocalDir(Vector3 worldDir)
+    public static Vector3 LocalDir(Transform transform, Vector3 worldDir)
     {
         return transform.rotation * worldDir;
     }
@@ -161,8 +161,8 @@ public class ShipController : MonoBehaviour
     {
 
         //apply forces to rigidbody
-        shipBody.velocity = Vector3.Lerp(shipBody.velocity, LocalDir(desiredForce) * speed, .2f);
-        shipBody.angularVelocity = Vector3.Lerp(shipBody.angularVelocity, LocalDir(desiredTorque) * 3, .2f);
+        shipBody.velocity = Vector3.Lerp(shipBody.velocity, LocalDir(transform, desiredForce) * speed, .2f);
+        shipBody.angularVelocity = Vector3.Lerp(shipBody.angularVelocity, LocalDir(transform, desiredTorque) * 3, .2f);
     }
 
     void AddForce(Vector3 force, bool rotation = false)
