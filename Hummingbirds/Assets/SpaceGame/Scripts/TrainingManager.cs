@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class  TrainingManager: Singleton<TrainingManager>
 {
-    
-    // Start is called before the first frame update
-    void Start()
+    //list of our ai
+    List<AlienAgent> ai = new List<AlienAgent>();
+
+    private void Start()
     {
-        
-        //DontDestroyOnLoad(gameObject);
+        //begin timer
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator StopEpisode(float seconds)
     {
-        
+        yield return new WaitForSeconds(seconds);
+
     }
 }
