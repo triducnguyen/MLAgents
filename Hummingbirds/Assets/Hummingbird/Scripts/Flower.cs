@@ -119,7 +119,7 @@ public class Flower : MonoBehaviour
         flowerMaterial = meshRenderer.material;
 
         // Find flower and nectar colliders
-        flowerCollider = transform.Find("FlowerCollider").GetComponent<Collider>();
-        nectarCollider = transform.Find("FlowerNectarCollider").GetComponent<Collider>();
+        flowerCollider = this.GetComponent<Collider>();
+        nectarCollider = GetComponent<Collider>();
     }
 }

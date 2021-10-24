@@ -96,7 +96,7 @@ public class HummingbirdAgent : Agent
         }
 
         // Move the agent to a new random position
-        MoveToSafeRandomPosition(inFrontOfFlower);
+        //MoveToSafeRandomPosition(inFrontOfFlower);
 
         // Recalculate the nearest flower now that the agent has moved
         UpdateNearestFlower();
@@ -240,6 +240,7 @@ public class HummingbirdAgent : Agent
         Debug.Assert(trainingMode == false, "Freeze/Unfreeze not supported in training");
         frozen = true;
         rigidbody.Sleep();
+        Debug.Log("Sleeping");
     }
 
     /// <summary>
@@ -250,6 +251,7 @@ public class HummingbirdAgent : Agent
         Debug.Assert(trainingMode == false, "Freeze/Unfreeze not supported in training");
         frozen = false;
         rigidbody.WakeUp();
+        Debug.Log("Wake");
     }
 
     /// <summary>
@@ -274,7 +276,7 @@ public class HummingbirdAgent : Agent
                 Flower randomFlower = flowerArea.Flowers[UnityEngine.Random.Range(0, flowerArea.Flowers.Count)];
 
                 // Position 10 to 20 cm in front of the flower
-                float distanceFromFlower = UnityEngine.Random.Range(.1f, .2f);
+                float distanceFromFlower = UnityEngine.Random.Range(0.1f, 0.2f);
                 potentialPosition = randomFlower.transform.position + randomFlower.FlowerUpVector * distanceFromFlower;
 
                 // Point beak at flower (bird's head is center of transform)
@@ -303,7 +305,8 @@ public class HummingbirdAgent : Agent
 
             // Check to see if the agent will collide with anything
             Collider[] colliders = Physics.OverlapSphere(potentialPosition, 0.05f);
-
+            //Debug.Log(colliders.Length);
+            Debug.Log(potentialPosition);
             // Safe position has been found if no colliders are overlapped
             safePositionFound = colliders.Length == 0;
         }
