@@ -6,6 +6,7 @@ using UnityEngine;
 public class ShipController : MonoBehaviour
 {
     public float speed = 20f;
+    public float baseSpeed = 20f;
 
     //if the ship is being piloted by an ai or a player (default is false)
     public bool ai_pilot = false;
@@ -217,7 +218,7 @@ public class ShipController : MonoBehaviour
         }
     }
 
-    void ToggleTakeOff()
+    public void ToggleTakeOff()
     {
         //check if not landed and can land
         if (!landed && canLand)

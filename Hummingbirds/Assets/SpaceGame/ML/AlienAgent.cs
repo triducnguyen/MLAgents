@@ -44,7 +44,7 @@ public class AlienAgent : Agent
         //choose a planet if one is not yet selected
         if (targetFlag == null) SetRandomFlagRange(50f);
         //position of target planet
-        //sensor.AddObservation(targetFlag.position);   //3
+        sensor.AddObservation(targetFlag.position);   //3
         //position of target planet flag
 
         //position of alien ship
@@ -64,7 +64,97 @@ public class AlienAgent : Agent
     //when the ai has decided to do something
     public override void OnActionReceived(float[] vectorAction)
     {
+        Vector3 direction = Vector3.zero;
+        Vector3 rotation = Vector3.zero;
+        bool landed = false;
+        bool speedUp = false;
         shipController.ControlShip(vectorAction);
+
+        switch (vectorAction[0])
+        {
+            case 0:
+                break;
+            case 1:
+                direction = Vector3.forward;
+                break;
+            case 2:
+                direction = Vector3.up;
+                break;
+            case 3:
+                direction = Vector3.right;
+                break;
+            case 4:
+                direction = -direction;
+                break;
+        }
+
+        switch (vectorAction[1])
+        {
+            case 0:
+                break;
+            case 1:
+                direction = Vector3.forward;
+                break;
+            case 2:
+                direction = Vector3.up;
+                break;
+            case 3:
+                direction = Vector3.right;
+                break;
+            case 4:
+                direction = -direction;
+                break;
+        }
+
+        if(vectorAction[2] == 1)
+        {
+            landed = true;
+        }
+        else
+        {
+            landed = false;
+        }
+
+        if(vectorAction[3] == 1)
+        {
+            speedUp = true;
+        }
+        else
+        {
+            speedUp = false;
+        }
+
+        shipController.desiredForce = direction;
+        shipController.desiredTorque = rotation;
+        if (landed)
+        {
+            shipController.ToggleTakeOff();
+        }
+        if (speedUp)
+        {
+            shipController.speed = shipController.baseSpeed + 10;
+        }
+        else
+        {
+            shipController.speed = shipController.baseSpeed;
+        }
+
+        float distanceToFlag = Vector3.Distance(transform.position, targetFlag.position);
+        if(distanceToFlag < 2f)
+        {
+            SetReward(1.0f);
+        }
+
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "boundary")
+        {
+            SetReward(-0.1f);
+        }
     }
 
 
