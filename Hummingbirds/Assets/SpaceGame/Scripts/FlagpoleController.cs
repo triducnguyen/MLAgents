@@ -2,8 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class FlagCaptureArgs{
+    public int claimingTeam;
+    public List<ShipController> claimers;
+public FlagCaptureArgs(int teamID, List<ShipController> helpers)
+    {
+        claimingTeam = teamID;
+        claimers = helpers;
+    }
+}
 public class FlagpoleController : MonoBehaviour
 {
+    //flag capture event handler
+    public delegate void FlagCaptureHandler(object sender, FlagCaptureArgs e);
+
+    //Flag captured event
+    public event FlagCaptureHandler flagCapture;
+
+
     //which team has claimed the flag (this is also used as an index to retrieve the team flag material)
     public int claimedBy = 0; //0 is neutral
 
@@ -155,6 +171,23 @@ public class FlagpoleController : MonoBehaviour
         }
     }
 
+    public List<ShipController> winningMembers
+    {
+        get
+        {
+            var winning = winningTeam;
+            List<ShipController> members = new List<ShipController>();
+            foreach (var ship in inRange)
+            {
+                if (ship.teamID == winning)
+                {
+                    members.Add(ship);
+                }
+            }
+            return members;
+        }
+    }
+
     public float flagInterval = 1f;
     public float flagSpeed = 0.1f;
 
@@ -164,6 +197,7 @@ public class FlagpoleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         //configure animator
         animator.speed = 0f;
         updateFlag = StartCoroutine(UpdateFlagProgress(flagInterval));
@@ -256,6 +290,9 @@ public class FlagpoleController : MonoBehaviour
                                 SetFlagDisplay(winning);
                                 SetFlagTeam(winning);
                                 desiredProgress = flagSpeed;
+                                //trigger capture
+                                flagCapture?.Invoke(this, new FlagCaptureArgs(winning, winningMembers));
+                                //add to score
                                 break;
                             }
                             else

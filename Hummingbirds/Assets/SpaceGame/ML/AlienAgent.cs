@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
+using System.Linq;
 
 public class AlienAgent : Agent
 {
@@ -17,11 +18,18 @@ public class AlienAgent : Agent
     //ai ship
     public ShipController shipController;
 
+    //whether ai is out of bounds or not
+    bool outOfBounds = false;
+
+    //list of flags
+    List<FlagpoleController> flags = new List<FlagpoleController>();
 
     // Start is called before the first frame update
     void Start()
     {
-
+        //get list of flags
+        //get flags
+        flags = GameObject.FindGameObjectsWithTag("space_flag").ToList().Select(x => x.GetComponent<FlagpoleController>()).ToList();
     }
 
     //executed at the beginning of training
@@ -66,71 +74,50 @@ public class AlienAgent : Agent
     {
         Vector3 direction = Vector3.zero;
         Vector3 rotation = Vector3.zero;
-        bool landed = false;
-        bool speedUp = false;
-        shipController.ControlShip(vectorAction);
+        bool toggleTakeoff = false;
+        bool nitro = false;
 
-        switch (vectorAction[0])
-        {
-            case 0:
-                break;
-            case 1:
-                direction = Vector3.forward;
-                break;
-            case 2:
-                direction = Vector3.up;
-                break;
-            case 3:
-                direction = Vector3.right;
-                break;
-            case 4:
-                direction = -direction;
-                break;
-        }
+        //get directions
 
-        switch (vectorAction[1])
-        {
-            case 0:
-                break;
-            case 1:
-                direction = Vector3.forward;
-                break;
-            case 2:
-                direction = Vector3.up;
-                break;
-            case 3:
-                direction = Vector3.right;
-                break;
-            case 4:
-                direction = -direction;
-                break;
-        }
+        //forward
+        direction += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //backward
+        direction += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //left
+        direction += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //right
+        direction += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //up
+        direction += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //down
+        direction += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
 
-        if(vectorAction[2] == 1)
-        {
-            landed = true;
-        }
-        else
-        {
-            landed = false;
-        }
 
-        if(vectorAction[3] == 1)
-        {
-            speedUp = true;
-        }
-        else
-        {
-            speedUp = false;
-        }
+        //get rotations
+        //roll+
+        rotation += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //roll-
+        rotation += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //pitch+
+        rotation += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //pitch-
+        rotation += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //yaw+
+        rotation += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
+        //yaw-
+        rotation += vectorAction[0] == 1 ? Vector3.forward : Vector3.zero;
 
+        //speed boost
+        nitro =  vectorAction[0] == 1;
+
+        //toggle takeoff
+        toggleTakeoff = vectorAction[0] == 1;
+
+        //apply ai actions to ship
         shipController.desiredForce = direction;
         shipController.desiredTorque = rotation;
-        if (landed)
-        {
-            shipController.ToggleTakeOff();
-        }
-        if (speedUp)
+
+        if (nitro)
         {
             shipController.speed = shipController.baseSpeed + 10;
         }
@@ -139,30 +126,87 @@ public class AlienAgent : Agent
             shipController.speed = shipController.baseSpeed;
         }
 
-        float distanceToFlag = Vector3.Distance(transform.position, targetFlag.position);
-        if(distanceToFlag < 2f)
+        if (toggleTakeoff)
         {
-            SetReward(1.0f);
+            shipController.ToggleTakeOff();
         }
-
-
-
     }
 
     private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "space_flag")
+        {
+            //attatch to capture event
+            FlagpoleController flag = other.GetComponent<FlagpoleController>();
+            flag.flagCapture += OnFlagCapture;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
     {
         if (other.tag == "boundary")
         {
             SetReward(-0.1f);
         }
+        if (other.tag == "space_flag")
+        {
+            //detatch from capture event
+        }
+
     }
 
+
+    public void OnFlagCapture(object flag, FlagCaptureArgs e)
+    {
+        if (e.claimingTeam == shipController.teamID)
+        {
+            //ai captured a flag!
+            AddReward(1f);
+
+            if (((FlagpoleController)flag).transform == targetFlag)
+            {
+                //select new target flag
+                SetRandomFlagRange(50f);
+            }
+        }
+    }
 
     //sets AI's target planet to a random planet within a given range.
     //if there are no planets in range, will use closest planet
     public void SetRandomFlagRange(float range)
     {
+        List<FlagpoleController> candidates = new List<FlagpoleController>();
+        FlagpoleController nearest = null;
+        float nearestFlag = 100;
+        foreach (var flag in flags)
+        {
+            var dist = Vector3.Distance(transform.position, flag.transform.position);
+            if (dist < range)
+            {
+                
+                candidates.Add(flag);
+            }
+            if (dist < nearestFlag)
+            {
+                nearest = flag;
+                nearestFlag = dist;
+            }
+        }
 
+        
+        if (candidates.Count > 0)
+        {
+            targetFlag = candidates[Random.Range(0, candidates.Count)].transform;
+        }
+        else if (candidates.Count < 1 && nearest != null)
+        {
+            targetFlag = nearest.transform;
+        }
+        else
+        {
+            //no target flags found
+            targetFlag = transform;
+        }
     }
 
 }

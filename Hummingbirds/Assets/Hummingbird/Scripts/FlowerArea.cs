@@ -85,7 +85,7 @@ public class FlowerArea : MonoBehaviour
         flowerPlants.AddRange(plants);
 
         //get all flowers
-        var flowers = GameObject.FindGameObjectsWithTag("flower").ToList().Select(x => x.GetComponent<Flower>()).ToArray();
+        var flowers = GameObject.FindGameObjectsWithTag("flower").ToList().Select(x => x.GetComponent<Flower>());
         Flowers.AddRange(flowers);
         //add flower's collider to flower dictionary
         foreach (var f in Flowers)
