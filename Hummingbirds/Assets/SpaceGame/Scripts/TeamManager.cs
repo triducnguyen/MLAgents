@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TeamMaterials : Singleton<TeamMaterials>
+public class TeamManager : Singleton<TeamManager>
 {
-    public Material[] mats;
+    public Color[] teams;
 }

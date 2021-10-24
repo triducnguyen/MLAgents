@@ -44,7 +44,7 @@ public class AlienAgent : Agent
         //choose a planet if one is not yet selected
         if (targetFlag == null) SetRandomFlagRange(50f);
         //position of target planet
-        sensor.AddObservation(targetFlag.position);   //3
+        //sensor.AddObservation(targetFlag.position);   //3
         //position of target planet flag
 
         //position of alien ship
@@ -64,7 +64,7 @@ public class AlienAgent : Agent
     //when the ai has decided to do something
     public override void OnActionReceived(float[] vectorAction)
     {
-        
+        shipController.ControlShip(vectorAction);
     }
 
 

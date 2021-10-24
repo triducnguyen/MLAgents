@@ -10,14 +10,25 @@ public class ShipController : MonoBehaviour
     //if the ship is being piloted by an ai or a player (default is false)
     public bool ai_pilot = false;
 
+    ////astronaut team
+    public TeamMaterial teamMat;
+
     //the teamID of this ship
     //team 0 is neutral
-    public int teamID = 0;
+    public int teamID
+    {
+        get => teamMat.teamID;
+    }
+    int oldID = 0;
+
     //whether or not the spacecraft is landed
     public bool landed = true;
 
     //reference to ship animator
     public Animator animator;
+
+    //reference to ship renderer
+    public MeshRenderer shipBodyRenderer;
 
     //reference to ship rigidbody
     public Rigidbody shipBody;
@@ -92,7 +103,7 @@ public class ShipController : MonoBehaviour
         rollRight = new KeyControl(KeyCode.E, () => AddForce(Vector3.back, true), () => AddForce(-Vector3.back, true));
         yawLeft = new KeyControl(KeyCode.LeftArrow, () => AddForce(Vector3.down, true), () => AddForce(-Vector3.down, true));
         yawRight = new KeyControl(KeyCode.RightArrow, () => AddForce(Vector3.up, true), () => AddForce(-Vector3.up, true));
-        breaks = new KeyControl(KeyCode.R, () => Breaks(), () => { });
+        //breaks = new KeyControl(KeyCode.R, () => Breaks(), () => { });
         takeoff = new KeyControl(KeyCode.F, () => ToggleTakeOff(), () => { });
         turbo = new KeyControl(KeyCode.LeftShift, () => speed += 10, () => speed -= 10);
 
@@ -109,12 +120,13 @@ public class ShipController : MonoBehaviour
             rollRight,
             yawLeft,
             yawRight,
-            breaks,
+            //breaks,
             takeoff,
             turbo
         };
 
-        //set up dictionary
+        //set colors
+        SetColors();
 
     }
 
@@ -123,11 +135,21 @@ public class ShipController : MonoBehaviour
     {
         //ship starts landed
         shipBody.constraints = RigidbodyConstraints.FreezeAll;
+
+        oldID = teamID;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //check if team has changed
+        if (oldID != teamID)
+        {
+            //team change
+            //change colors
+            SetColors();
+        }
+
         //check if there is a player
         if (!ai_pilot)
         {
@@ -238,6 +260,24 @@ public class ShipController : MonoBehaviour
         landed = true;
     }
 
+    public void SetColors()
+    {
+        shipBodyRenderer.materials[0].SetColor("TeamColor", TeamManager.instance.teams[teamID]);
+        oldID = teamID;
+    }
+
+    //ai Dictionary
+    Dictionary<int, Vector3> out2force = new Dictionary<int, Vector3>();
+
+    //a function the AI will use to control the ship instead of key-binds
+    public void ControlShip(float[] vectorAction)
+    {
+        //move ship
+        Vector3 desiredDirection = Vector3.zero;
+        float x = vectorAction[0];
+        float y = vectorAction[0];
+        float z = vectorAction[0];
+    }
 }
 [System.Serializable]
 public class KeyControl

@@ -8,6 +8,8 @@ TagManager:
   - nectar
   - boundary
   - flower
+  - spaceship
+  - space_flag
   layers:
   - Default
   - TransparentFX
