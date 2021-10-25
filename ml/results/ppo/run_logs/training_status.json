@@ -1,0 +1,29 @@
+{
+    "SpaceAI": {
+        "checkpoints": [
+            {
+                "steps": 14336,
+                "file_path": "results\\ppo\\SpaceAI\\SpaceAI-14336.onnx",
+                "reward": null,
+                "creation_time": 1635130888.9748547,
+                "auxillary_file_paths": [
+                    "results\\ppo\\SpaceAI\\SpaceAI-14336.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 14336,
+            "file_path": "results\\ppo\\SpaceAI.onnx",
+            "reward": null,
+            "creation_time": 1635130888.9748547,
+            "auxillary_file_paths": [
+                "results\\ppo\\SpaceAI\\SpaceAI-14336.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0+cpu"
+    }
+}

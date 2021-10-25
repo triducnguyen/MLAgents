@@ -1,0 +1,66 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1635134385",
+        "python_version": "3.8.3 (tags/v3.8.3:6f8c832, May 13 2020, 22:37:02) [MSC v.1924 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Ryan\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\mlagents-learn .\\new_space_training.yaml --run-id=firstRun --resume",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.10.0+cpu",
+        "numpy_version": "1.19.3",
+        "end_time_seconds": "1635134867"
+    },
+    "total": 481.93925099999996,
+    "count": 1,
+    "self": 0.006811999999911222,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09335389999999999,
+            "count": 1,
+            "self": 0.09335389999999999
+        },
+        "TrainerController.start_learning": {
+            "total": 481.83908510000003,
+            "count": 1,
+            "self": 0.0004600999999411215,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 474.9281012,
+                    "count": 1,
+                    "self": 474.9281012
+                },
+                "TrainerController.advance": {
+                    "total": 6.910515099999998,
+                    "count": 1,
+                    "self": 2.2199999989425123e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 6.910492900000008,
+                            "count": 1,
+                            "self": 6.910491199999967,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 1.7000000411826477e-06,
+                                    "count": 1,
+                                    "self": 1.7000000411826477e-06
+                                }
+                            }
+                        }
+                    }
+                },
+                "trainer_threads": {
+                    "total": 7.00000043707405e-07,
+                    "count": 1,
+                    "self": 7.00000043707405e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 8.00000003664536e-06,
+                    "count": 1,
+                    "self": 8.00000003664536e-06
+                }
+            }
+        }
+    }
+}

@@ -174,6 +174,7 @@ MonoBehaviour:
   rayOrigin: {fileID: 71883460223848984}
   desiredForce: {x: 0, y: 0, z: 0}
   desiredTorque: {x: 0, y: 0, z: 0}
+  resetPosition: {fileID: 0}
 --- !u!114 &1019072523732816786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,13 +188,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 14
+    VectorObservationSize: 15
     NumStackedVectorObservations: 1
     VectorActionSize: 06000000030000000100000001000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
   m_Model: {fileID: 0}
-  m_InferenceDevice: 0
+  m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: SpaceAI
   TeamId: 0
@@ -214,11 +215,16 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  manager: {fileID: 0}
   aiCamera: {fileID: 0}
   rBody: {fileID: 1035269125287944945}
   targetFlag: {fileID: 0}
+<<<<<<< Updated upstream
   resetPosition: {fileID: 0}
   shipController: {fileID: 0}
+=======
+  shipController: {fileID: 5461622305255770570}
+>>>>>>> Stashed changes
 --- !u!114 &8256721054561898997
 MonoBehaviour:
   m_ObjectHideFlags: 0
