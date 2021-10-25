@@ -87,6 +87,7 @@ public class ShipController : MonoBehaviour
     KeyControl takeoff;
     KeyControl turbo;
 
+    public Transform resetPosition;
 
     private void Awake()
     {
@@ -259,6 +260,10 @@ public class ShipController : MonoBehaviour
         //make ship landed
         PlayAnimation("landed");
         landed = true;
+        //place ship back at beginning
+        transform.position = resetPosition.position;
+        transform.rotation = resetPosition.rotation;
+        shipBody.constraints = RigidbodyConstraints.FreezeAll;
     }
 
     public void SetColors()

@@ -7,29 +7,29 @@ using System.Linq;
 
 public class AlienAgent : Agent
 {
+    //agent episode manager
+    public TrainingAreaManager manager;
+
     //what the AI can see
     public Camera aiCamera;
     //AI rigidbody
     public Rigidbody rBody;
     //target planet to claim
     public Transform targetFlag;
-    //AI reset position
-    public Transform resetPosition;
     //ai ship
     public ShipController shipController;
 
     //whether ai is out of bounds or not
     bool outOfBounds = false;
 
-    //list of flags
-    List<FlagpoleController> flags = new List<FlagpoleController>();
+    
 
     // Start is called before the first frame update
     void Start()
     {
         //get list of flags
         //get flags
-        flags = GameObject.FindGameObjectsWithTag("space_flag").ToList().Select(x => x.GetComponent<FlagpoleController>()).ToList();
+        //flags = manager.gameObject.chi .ToList().Select(x => x.GetComponent<FlagpoleController>()).ToList();
     }
 
     //executed at the beginning of training
@@ -38,11 +38,13 @@ public class AlienAgent : Agent
         //base.OnEpisodeBegin();
 
         //move ai back to reset pos
-        transform.position = resetPosition.position;
-        transform.rotation = resetPosition.rotation;
+        transform.position = shipController.resetPosition.position;
+        transform.rotation = shipController.resetPosition.rotation;
         //reset ship
         shipController.ResetShip();
         
+        //tell scene manager ai is ready
+
     }
 
     //tells the ai to get information about the world
@@ -72,6 +74,11 @@ public class AlienAgent : Agent
     //when the ai has decided to do something
     public override void OnActionReceived(float[] vectorAction)
     {
+        //dont allow the ai to control the ship until training starts
+        if (!manager.started)
+        {
+            return;
+        }
         Vector3 direction = Vector3.zero;
         Vector3 rotation = Vector3.zero;
         bool toggleTakeoff = false;
@@ -178,9 +185,12 @@ public class AlienAgent : Agent
         List<FlagpoleController> candidates = new List<FlagpoleController>();
         FlagpoleController nearest = null;
         float nearestFlag = 100;
-        foreach (var flag in flags)
+        foreach (var flag in manager.flags)
         {
+            Debug.Log(manager.flags.Count);
+            Debug.Log("flag gameobject: "+flag.gameObject);
             var dist = Vector3.Distance(transform.position, flag.transform.position);
+            Debug.Log(dist);
             if (dist < range)
             {
                 
@@ -206,7 +216,14 @@ public class AlienAgent : Agent
         {
             //no target flags found
             targetFlag = transform;
+            
         }
     }
 
+    public void StopEpisode()
+    {
+        EndEpisode();
+        //reset agent
+        shipController.ResetShip();
+    }
 }
